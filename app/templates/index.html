@@ -1,0 +1,9 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h1>Hi, {{user.nickname}}!</h1>
+{% for post in posts %}
+<div><p>{{post.author.nickname}} says : <b>{{post.body}}</b></p></div>
+{% endfor %}
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524666412&di=2d0e4914bc96aea3c6c52c5b21362cf9&imgtype=jpg&er=1&src=http%3A%2F%2Fdl.bizhi.sogou.com%2Fimages%2F2013%2F08%2F12%2F357531.jpg" width = "800" height="450">
+{% endblock %}
